@@ -8,5 +8,5 @@ yspd = 0;
 // Jumping
 grav = 0.275;
 termVel = 4;
-jspeed = -3.15;
+jspeed = -10.15;
 
