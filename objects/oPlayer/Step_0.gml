@@ -28,14 +28,23 @@ getControls();
 	
 // y movement 
 	//gravity 
-	yspd += grav;
-	if yspd > termVel {yspd = termVel;};
+	if hangTimer > 0 {
+		hangTimer--;
+	}
+	else {
+		yspd += grav;
+		setOnGround(false);
+	}
+
+	
 	
 	// jump 
 	if onGround {
 			jumpCount = 0;
+			jumpTimer = jumpFrames;
 	} else {
-		if jumpCount == 0 { jumpCount = 1;};
+		jumpTimer--;
+		if jumpCount == 0 && jumpTimer <= 0 { jumpCount = 1;};
 	
 	};
 		
@@ -49,6 +58,7 @@ getControls();
 
 		// set the jum hold timer
 		jumpHoldTimer = jumpHoldFrames;
+		setOnGround(false);
 		
 	}
 	if !jumpKey {
@@ -60,6 +70,9 @@ getControls();
 		yspd = jspeed;
 		jumpHoldTimer--;
 	}
+	
+	
+	
 	
 	//y collision
 	var _subPixel = .5;
@@ -73,10 +86,8 @@ getControls();
 	}
 	// set if im on the ground 
 	if yspd >= 0 && place_meeting(x, y+1, oWall) {
-		onGround = true;
-	}
-	else {
-		onGround = false;
+		
+		setOnGround(true);
 	}
 	
 	

@@ -1,3 +1,16 @@
+// Player Functions
+function setOnGround(_val = true) {
+	if _val == true {
+		onGround = true;
+		hangTimer = hangFrames;
+	} else {
+		onGround = false;
+		hangTimer = 0;
+	}
+	
+}
+
+
 // Control setup
 controlsSetup();
 
@@ -18,3 +31,10 @@ jumpCount = 0;
 jumpHoldTimer = 0;
 jumpHoldFrames = 14;
 onGround = true;
+
+// Coyote Time
+hangFrames = 4;
+hangTimer = 0;
+
+jumpFrames = 5;
+jumpTimer = 0;
