@@ -103,7 +103,7 @@ getControls();
 	// walking
 	if abs(xspd) > 0 {sprite_index = walkSprite;};
 	if abs(xspd) >= moveSpeed[1] {sprite_index = runSprite;};
-	if xspd == 0 {sprite_index = idleSprite;};
+	if xspd == 0 {sprite_index = NewIdleSprite;};
 	if !onGround {sprite_index = jumpSprite;};
 	mask_index = idleSprite;
 

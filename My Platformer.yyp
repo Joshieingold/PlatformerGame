@@ -26,6 +26,8 @@
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"general_functions","path":"scripts/general_functions/general_functions.yy",},},
+    {"id":{"name":"NewSpriteIdle","path":"sprites/NewSpriteIdle/NewSpriteIdle.yy",},},
+    {"id":{"name":"NewSpriteWalk","path":"sprites/NewSpriteWalk/NewSpriteWalk.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sPlayerCrouchBig_sheet","path":"sprites/sPlayerCrouchBig_sheet/sPlayerCrouchBig_sheet.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
