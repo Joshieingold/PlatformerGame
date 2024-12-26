@@ -5,9 +5,13 @@ getControls();
 // x movement
 	//direction
 	moveDir = rightKey - leftKey ;
-
+	// get face
+	if moveDir != 0 {
+		face = moveDir;
+	}
 	// get xspd
-	xspd = moveDir * moveSpeed;
+	runType = runKey;
+	xspd = moveDir * moveSpeed[runType];
 
 
 	// x collision
@@ -94,7 +98,14 @@ getControls();
 	// move
 	y+= yspd;
 
+//sprite control 
 
+	// walking
+	if abs(xspd) > 0 {sprite_index = walkSprite;};
+	if abs(xspd) >= moveSpeed[1] {sprite_index = runSprite;};
+	if xspd == 0 {sprite_index = idleSprite;};
+	if !onGround {sprite_index = jumpSprite;};
+	mask_index = idleSprite;
 
 
 

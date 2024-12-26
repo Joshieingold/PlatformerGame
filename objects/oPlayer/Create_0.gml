@@ -14,10 +14,19 @@ function setOnGround(_val = true) {
 // Control setup
 controlsSetup();
 
+// sprites 
+idleSprite = sPlayerIdle;
+walkSprite = sPlayerWalk;
+runSprite = sPlayerRun;
+jumpSprite = sPlayerJump;
+
 
 //Moving
+face = 1;
 moverDir = 0;
-moveSpeed = 2;
+runType = 0;
+moveSpeed[0] = 2;
+moveSpeed[1] = 3.5
 xspd = 0;
 yspd = 0;
 

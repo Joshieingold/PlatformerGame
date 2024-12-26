@@ -17,6 +17,9 @@ function getControls() {
 	jumpKeyPressed = keyboard_check_pressed(ord("Z"));
 	jumpKey = keyboard_check(ord("Z"))
 	
+	runKey = keyboard_check(vk_shift);
+	runKey = clamp(runKey, 0, 1);
+	
 	// Jump key buffering
 	if jumpKeyPressed {
 		jumpKeyBufferTimer = bufferTime;
