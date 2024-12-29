@@ -20,8 +20,7 @@ walkSprite = sPlayerWalk;
 runSprite = sPlayerRun;
 jumpSprite = sPlayerJump;
 
-// New Sprite
-NewIdleSprite = NewSpriteIdle;
+
 
 
 //Moving

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"NewSpriteIdle",
-    "path":"sprites/NewSpriteIdle/NewSpriteIdle.yy",
+    "name":"sPlayerIdle",
+    "path":"sprites/sPlayerIdle/sPlayerIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
