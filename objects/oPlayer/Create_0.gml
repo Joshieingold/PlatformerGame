@@ -19,6 +19,7 @@ idleSprite = sPlayerIdle;
 walkSprite = sPlayerWalk;
 runSprite = sPlayerRun;
 jumpSprite = sPlayerJump;
+slideSprite = sPlayerWallSlide;
 
 
 
@@ -42,6 +43,8 @@ jumpCount = 0;
 jumpHoldTimer = 0;
 jumpHoldFrames = 14;
 onGround = true;
+onWall = false;
+
 
 // Coyote Time
 hangFrames = 4;
@@ -49,3 +52,11 @@ hangTimer = 0;
 
 jumpFrames = 5;
 jumpTimer = 0;
+//attack
+
+attackActive = false; // Flag to indicate if the attack is active
+attackTimer = 0; // Timer for the attack duration
+attackDuration = 8; // Duration of the attack animation in steps (adjust as needed)
+attackDamage = 10; // Damage dealt by the slash attack
+slashSprite = sPlayerSlash; // Your slash attack sprite
+bounceForce = 60; // Force applied when bouncing off a wall
