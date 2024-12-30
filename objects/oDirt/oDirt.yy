@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayer",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oDirt",
+  "eventList":[],
   "managed":true,
-  "name":"oPlayer",
+  "name":"oDirt",
   "overriddenProperties":[],
   "parent":{
     "name":"My Platformer",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerWalk",
-    "path":"sprites/sPlayerWalk/sPlayerWalk.yy",
+    "name":"sDirt",
+    "path":"sprites/sDirt/sDirt.yy",
   },
   "spriteMaskId":null,
   "visible":true,

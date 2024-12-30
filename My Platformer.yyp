@@ -21,6 +21,7 @@
   "name":"My Platformer",
   "resources":[
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
+    {"id":{"name":"oDirt","path":"objects/oDirt/oDirt.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
@@ -28,7 +29,7 @@
     {"id":{"name":"general_functions","path":"scripts/general_functions/general_functions.yy",},},
     {"id":{"name":"NewSpriteIdle","path":"sprites/NewSpriteIdle/NewSpriteIdle.yy",},},
     {"id":{"name":"NewSpriteWalk","path":"sprites/NewSpriteWalk/NewSpriteWalk.yy",},},
-    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"sDirt","path":"sprites/sDirt/sDirt.yy",},},
     {"id":{"name":"sPlayerCrouchBig_sheet","path":"sprites/sPlayerCrouchBig_sheet/sPlayerCrouchBig_sheet.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"sPlayerIdleBig_sheet","path":"sprites/sPlayerIdleBig_sheet/sPlayerIdleBig_sheet.yy",},},
