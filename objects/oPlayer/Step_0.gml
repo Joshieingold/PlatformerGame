@@ -98,27 +98,6 @@ if (yspd >= 0 && place_meeting(x, y + 1, oWall)) {
     setOnGround(true);
 }
 
-// Attack logic
-
-
-// In your attack logic
-if (attackActive) {
-    attackTimer++; // Increment the attack timer
-    
-    // Check for collisions with enemies
-    var hitEnemy = instance_place(x, y, oEnemy); // Replace oEnemy with your enemy object
-    if (hitEnemy != noone) {
-        if (hitEnemy.health != undefined) {
-            hitEnemy.health -= attackDamage; // Apply damage
-        }
-    }
-    
-    // Check if the attack animation is finished
-    if (attackTimer >= attackDuration) {
-        attackActive = false; // End the attack
-        sprite_index = idleSprite; // Return to idle or previous sprite
-    }
-}
 
 // Move
 y += yspd;
@@ -139,17 +118,5 @@ if (!onGround) {
 if (onWall) {
     sprite_index = slideSprite;
 }
-if (attackKeyPressed && !attackActive) {
-    performSlashAttack(); // Call the attack function
-	sprite_index = slashSprite; // Set this to your slash attack sprite
-}
 mask_index = idleSprite;
 
-// Function to handle the slash attack
-function performSlashAttack() {
-    // Play the attack animation
-    sprite_index = slashSprite; // Set this to your slash attack sprite
-    image_index = 0; // Reset the animation frame if needed
-    attackActive = true; // Flag to indicate the attack is active
-    attackTimer = 0; // Reset the attack timer
-}
